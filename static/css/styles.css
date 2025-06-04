@@ -1,0 +1,86 @@
+/* Gradient Background with Subtle Animation */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    animation: bgMove 10s infinite alternate;
+    background-size: 200% 200%;
+    color: #333;
+}
+
+@keyframes bgMove {
+    from {
+        background-position: top left;
+    }
+    to {
+        background-position: bottom right;
+    }
+}
+
+/* Centered Card Container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.937);
+    animation: fadeIn 1s ease-in;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Typography */
+h1, h3, h4 {
+    text-align: center;
+    font-weight: 700;
+    color: #1a2a6c;
+}
+
+/* Form Inputs */
+input[type="text"],
+select,
+textarea {
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #1a2a6c;
+    box-shadow: 0 0 8px rgba(26, 42, 108, 0.2);
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgb(255, 255, 3);
+}
+
+/* Checkbox */
+.form-check-label {
+    margin-left: 8px;
+}
